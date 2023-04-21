@@ -1,0 +1,156 @@
+.basket_card {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    width: 100%;
+    height: 156px;
+    margin-top: 30px;
+    background: #FFFFFF;
+    border-bottom: 1px solid rgba(91, 91, 91, 0.5);
+}
+
+.bascket_card_left_side {
+    display: flex;
+}
+
+.basket_card_imgp_place {
+    width: 143px;
+    height: 141px;
+}
+
+.basket_card_imgp_place img {
+    width: 100%;
+    height: 100%;
+}
+
+.basket_card_text_place {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.basket_card_artikul {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #3C4751;
+    opacity: 0.7;
+}
+
+.basket_card_title {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+    color: #333333;
+}
+
+.basket_card_cost_calculator {
+    display: flex;
+    align-items: center;
+}
+
+.basket_card_cost {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    color: #333333;
+}
+
+.basket_card_multiply_img {
+    width: 9px;
+    height: 9px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.basket_card_input {
+    width: 37px;
+    height: 31px;
+    padding-left: 10px;
+}
+
+.basket_card_equal_img {
+    width: 13px;
+    height: 9px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.basket_card_order_img {
+    margin-left: 20px;
+}
+
+.basket_order_place_input1_title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #00102A;
+}
+
+.basket_order_place_input1_title span {
+    color: red;
+}
+
+.basket_order_place_input1_input {
+    width: 630px;
+    height: 60px;
+
+    /* White */
+
+    background: #FFFFFF;
+    border: 1px solid rgba(40, 116, 240, 0.5);
+    border-radius: 6px;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.basket_order_place_inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.basket_order_place_btn_order {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 30px;
+    padding: 12px 24px;
+
+    width: 160px;
+    height: 23px;
+
+    /* blue */
+
+    background: #2874F0;
+    border-radius: 4px;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.basket_cards_cost {
+    margin-top: 40px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 35px;
+    color: #333333;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.basket_cards_cost span {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 46px;
+    color: #333333;
+    margin-left: 10px;
+}
+
+.empty_basket_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 100px 50px 100px 50px;
+}

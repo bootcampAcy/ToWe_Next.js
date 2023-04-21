@@ -1,0 +1,364 @@
+.user_page {
+    width: 100%;
+}
+
+.user_page .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user_side_bar {
+    width: 20%;
+    height: 100%;
+
+}
+
+.personal_information_btn , .history_order_btn, .pay_btn{
+    cursor: pointer;
+}
+
+.side_bar_here {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.04em;
+    color: #00102A;
+    opacity: 0.7;
+    display: flex;
+    margin-top: 40px;
+}
+
+.side_bar_here p:first-child {
+    color: #2874F0;
+    margin-left: 4px;
+}
+
+.side_bar_here p:last-child {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.04em;
+    color: #00102A;
+    opacity: 0.5;
+    margin-left: 4px;
+}
+
+.side_bar_user_profile {
+    margin-top: 30px;
+}
+
+.user_names {
+    margin-top: 20px;
+    display: flex;
+}
+
+.user_names div {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 35px;
+    color: #333333;
+}
+
+.user_name {
+    margin-left: 5px;
+}
+
+.user_gmail {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #3C4751;
+    opacity: 0.7;
+}
+
+.side_bar_menu {
+    margin-top: 30px;
+}
+
+.side_bar_menu div {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+    color: #00102A;
+    margin-bottom: 10px;
+}
+
+.user_main_bar {
+    width: 80%;
+
+}
+
+.history_orders {
+    width: 100%;
+    margin-top: 80px;
+
+}
+
+.history_orders_title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 46px;
+    color: #333333;
+}
+
+.history_orders_title_desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #3C4751;
+    opacity: 0.7;
+    margin-top: 20px;
+}
+
+.history_order_card {
+    margin-top: 20px;
+    padding: 25px 30px 20px;
+    gap: 18px;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    background: #FFFFFF;
+    box-shadow: 0px -1px 10px rgba(0, 26, 52, 0.1);
+    border-radius: 10px;
+}
+
+.history_order_card_info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+
+.history_order_card_tovar_title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #00102A;
+    opacity: 0.7;
+}
+
+.history_order_card_articul_title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #00102A;
+    opacity: 0.7;
+}
+
+.history_order_card_quant_title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #00102A;
+    opacity: 0.7;
+}
+
+.history_order_card_cost_title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #00102A;
+    opacity: 0.7;
+}
+
+.history_orders_cost_card_itog {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #00102A;
+}
+
+.history_order_card_tovar {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    color: #00102A;
+    opacity: 0.7;
+}
+
+.history_order_card_articul {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    color: #00102A;
+    opacity: 0.7;
+}
+
+.history_order_card_quant {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    color: #00102A;
+    opacity: 0.7;
+}
+
+.history_order_card_cost {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    color: #00102A;
+    opacity: 0.7;
+}
+
+.history_orders_cost_card_place {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.history_orders_cost_card_itog {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 35px;
+    color: #00102A;
+    margin-right: 10px;
+}
+
+.history_orders_cost_card {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 35px;
+    color: #00102A;
+}
+
+.history_order_page {
+    display: flex;
+    width: 325px;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.history_order_page div {
+    width: 40px;
+    height: 40px;
+
+    background: #FFFFFF;
+    /* black */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #00102a71;
+    box-shadow: 0px 0px 16.7841px -1.19887px rgba(0, 26, 52, 0.1);
+    border-radius: 4px;
+
+}
+
+.history_order_page p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Personal_information */
+
+.personal_information {
+    width: 100%;
+    margin-top: 80px;
+}
+
+.personal_information_title_place {
+    display: flex;
+    justify-content: space-between;
+}
+
+.personal_information_buttons {
+    display: flex;
+    align-items: center;
+}
+
+.personal_information_button_change {
+    margin-right: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #00102A;
+    border: 1px solid #00102A;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 169px;
+    height: 35px;
+}
+
+.personal_information_button_change img {
+    padding-bottom: 2px;
+    margin-right: 5px;
+}
+
+.personal_information_button_edit {
+    margin-right: 20px;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 19px;
+    background: #2874F0;
+    box-shadow: 0px 4px 6px rgba(50, 50, 93, 0.11);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 169px;
+    height: 35px;
+}
+
+.personal_information_button_edit img {
+    margin-right: 10px;
+
+}
+
+
+.personal_information_card_place {
+    margin-top: 30px;
+    display: flex;
+    justify-content: stretch;
+}
+
+.personal_information_card_place > div:first-child{
+    margin-left: 0px;
+}
+
+.personal_information_card {
+    width: 300px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #FFFFFF;
+    box-shadow: 0px -1px 10px rgba(0, 26, 52, 0.1);
+    border-radius: 14px;
+    margin-left: 90px;
+}
+
+.personal_information_card .container{
+    width: 80%;
+}
+
+.personal_information_card_desc {
+    display: flex;
+    flex-direction: column;
+}
+
+.personal_information_card_title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 35px;
+    color: #333333;
+}
+
+.personal_information_card_personal {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #3C4751;
+}
+
+.personal_information_card img {
+    width: 33px;
+    height: 33px;
+}

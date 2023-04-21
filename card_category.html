@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Main.css">
+    <link rel="stylesheet" href="favorites.css">
+    <link rel="stylesheet" href="product_view.css">
+    <link rel="stylesheet" href="./libs/nouislider.min.css">
+    <link rel="stylesheet" href="card_category.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="katalog_header">
+                <img src="./img_ikonki/Frame 2.png" class="katalog_img" alt="">
+                <div>Каталог</div>
+            </div>
+            <div class="header_input">
+                <input placeholder="Найдите" type="text">
+                <div class="search_input">
+                    <img src="./img_ikonki/search-normal.png" alt="">
+                </div>
+            </div>
+            <div class="header_buttons">
+                <div class="account">
+                    <a href="./user_page.html"></a>
+                    <img src="./img_ikonki/material-symbols_account-circle-outline.png" alt="">
+                    <div>Аккаунт</div>
+                </div>
+                <div class="favorite">
+                    <a href="./favorites.html"></a>
+                    <img src="./img_ikonki/ic_round-favorite-border2.png" alt="">
+                    <div>Избранное</div>
+                </div>
+                <div class="basket">
+                    <a href="./basket.html"></a>
+                    <img src="./img_ikonki/majesticons_basket-2-line.png" alt="">
+                    <div>Корзина</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="position_catalog" style="display: none;">
+        <div class="catalog_sidebar">
+            <div class="category_scroll">
+                <div class="category_card active_category_menu"><img class="passive_img" style="display: none;"
+                        src="./img_ikonki/ion_bulb-outline.png" alt=""> <img src="./img_ikonki/ion_bulb-outline2.png"
+                        class="active_category_menu_img">Лампочки</div>
+                <div class="category_card "><img class="passive_img" src="./img_ikonki/ion_bulb-outline.png" alt="">
+                    <img style="display: none;" src="./img_ikonki/ion_bulb-outline2.png"
+                        class="active_category_menu_img">Лампочки
+                </div>
+                <div class="category_card "><img class="passive_img" src="./img_ikonki/ion_bulb-outline.png" alt="">
+                    <img style="display: none;" src="./img_ikonki/ion_bulb-outline2.png"
+                        class="active_category_menu_img">Лампочки
+                </div>
+                <div class="category_card "><img class="passive_img" src="./img_ikonki/ion_bulb-outline.png" alt="">
+                    <img style="display: none;" src="./img_ikonki/ion_bulb-outline2.png"
+                        class="active_category_menu_img">Лампочки
+                </div>
+                <div class="category_card "><img class="passive_img" src="./img_ikonki/ion_bulb-outline.png" alt="">
+                    <img style="display: none;" src="./img_ikonki/ion_bulb-outline2.png"
+                        class="active_category_menu_img">Лампочки
+                </div>
+                <div class="category_card "><img class="passive_img" src="./img_ikonki/ion_bulb-outline.png" alt="">
+                    <img style="display: none;" src="./img_ikonki/ion_bulb-outline2.png"
+                        class="active_category_menu_img">Лампочки
+                </div>
+                <div class="category_card "><img class="passive_img" src="./img_ikonki/ion_bulb-outline.png" alt="">
+                    <img style="display: none;" src="./img_ikonki/ion_bulb-outline2.png"
+                        class="active_category_menu_img">Лампочки
+                </div>
+                <div class="category_card "><img class="passive_img" src="./img_ikonki/ion_bulb-outline.png" alt="">
+                    <img style="display: none;" src="./img_ikonki/ion_bulb-outline2.png"
+                        class="active_category_menu_img">Лампочки
+                </div>
+                <div class="category_card "><img class="passive_img" src="./img_ikonki/ion_bulb-outline.png" alt="">
+                    <img style="display: none;" src="./img_ikonki/ion_bulb-outline2.png"
+                        class="active_category_menu_img">Лампочки
+                </div>
+                <div class="category_card "><img class="passive_img" src="./img_ikonki/ion_bulb-outline.png" alt="">
+                    <img style="display: none;" src="./img_ikonki/ion_bulb-outline2.png"
+                        class="active_category_menu_img">Лампочки
+                </div>
+                <div class="category_card "><img class="passive_img" src="./img_ikonki/ion_bulb-outline.png" alt="">
+                    <img style="display: none;" src="./img_ikonki/ion_bulb-outline2.png"
+                        class="active_category_menu_img">Лампочки
+                </div>
+                <div class="category_card "><img class="passive_img" src="./img_ikonki/ion_bulb-outline.png" alt="">
+                    <img style="display: none;" src="./img_ikonki/ion_bulb-outline2.png"
+                        class="active_category_menu_img">Лампочки
+                </div>
+
+            </div>
+        </div>
+        <div class="catalog_mainbar">
+            <div class="catalog_mainbar_views">
+                <div class="catalog_mainbar_views_title">Виды</div>
+                <div class="catalog_mainbar_views_main">
+                    <div>Подвесные</div>
+                    <div>Потолочные</div>
+                    <div>Настенно-потолочные</div>
+                    <div>Накладные светильники</div>
+                    <div>Встраиваемые</div>
+                    <div>Настенные</div>
+                    <div>Для растений</div>
+                    <div>Накладные светильники</div>
+                    <div>Настенные</div>
+                    <div>Накладные светильники</div>
+                    <div>Настенные</div>
+                    <div>Элитные светильники</div>
+                </div>
+            </div>
+            <div class="catalog_mainbar_places">
+                <div class="catalog_mainbar_places_title">Место использования</div>
+                <div class="catalog_mainbar_places_main">
+                    <div>Для спальни</div>
+                    <div>Для гостинной</div>
+                    <div>Для кухни</div>
+                    <div>Для детской</div>
+                    <div>Для ванной</div>
+                    <div>Для прихожей</div>
+                    <div>Для экспозиции</div>
+                    <div>Для больших залов</div>
+                    <div>Для магазина</div>
+                    <div>Для бань и саун</div>
+                    <div>Для кафе и ресторанов</div>
+                </div>
+            </div>
+            <div class="catalog_mainbar_styles">
+                <div class="catalog_mainbar_styles_title">Стили</div>
+                <div class="catalog_mainbar_styles_main">
+                    <div>Классика</div>
+                    <div>Арт-деко</div>
+                    <div>Современный</div>
+                    <div>Кантри</div>
+                    <div>Тиффани</div>
+                    <div>Хай-тек</div>
+                    <div>Прованс</div>
+                    <div>Восточный</div>
+                    <div>Замковый</div>
+                    <div>Лофт</div>
+                    <div>Морской</div>
+                    <div>Модерн</div>
+                    <div>Ретро</div>
+                    <div>Неоклассика</div>
+                    <div>Дизайнерский</div>
+                    <div>Дизайнерский</div>
+                </div>
+            </div>
+            <div class="catalog_mainbar_materials">
+                <div class="catalog_mainbar_materials_title">Материал</div>
+                <div class="catalog_mainbar_materials_main">
+                    <div>Хрустальные</div>
+                    <div>Деревянные</div>
+                    <div>Стеклянные</div>
+                    <div>Пластиковые</div>
+                    <div>Текстильные</div>
+                    <div>Керамические</div>
+                    <div>Металический</div>
+                    <div>Гипсовые</div>
+                    <div>Хрустальные
+                        тонированные</div>
+                    <div>Лофт</div>
+                    <div>Бетонные</div>
+                    <div>Кожанные</div>
+                    <div>Силиконовые</div>
+                    <div>Бумажные</div>
+                    <div>Цементные</div>
+                    <div>Дизайнерский</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="under_header">
+        <div class="container">
+            <div class="borders"></div>
+            <div>Люстры</div>
+            <div>Светильники</div>
+            <div>Бра</div>
+            <div>Споты</div>
+            <div>Настольные лампы</div>
+            <div>Уличное освещение</div>
+            <div>Новогодние товары</div>
+            <div class="borders"></div>
+        </div>
+    </div>
+    <div class="main_category">
+        <div class="container">
+            <div class="side_bar_here">
+                <div>Главная</div>
+                <p>/</p>
+                <div>Каталог</div>
+                <p>/</p>
+                <div>Люстры</div>
+                <p>/</p>
+                <span>Потолочная люстра MW-light блеск</span>
+            </div>
+            <div class="category_main_bar">
+                <div class="side_bar_category">
+                    <div class="container">
+                        <div class="category_main_bar_title">Категории</div>
+                        <div class="category_main_bar_categories">
+                            <div class="category_main_bar_categori">
+                                <div class="category_lystri">
+                                    <div class="category_main_bar_categori_now">
+                                        <div>Люстры</div>
+                                        <img class="category_main_bar_categori_active_img_now"
+                                            src="./img_ikonki/chevron.png" alt="">
+                                        <img class="category_main_bar_categori_active_img" style="display: none;"
+                                            src="./img_ikonki/chevron1.png" alt="">
+                                    </div>
+                                    <div class="onclick_lystri" style="display: none;">
+                                        <input placeholder="Поиск по списку"
+                                            class="category_main_bar_categori_active_input" type="text">
+                                        <div class="category_main_bar_categori_now_bottom_after">
+                                            <div class="checkbox_category">
+                                                <input class="checkbox" type="checkbox">
+                                                <div>Американский</div>
+                                            </div>
+                                            <div class="checkbox_category">
+                                                <input class="checkbox" type="checkbox">
+                                                <div>Американский</div>
+                                            </div>
+                                            <div class="checkbox_category">
+                                                <input class="checkbox" type="checkbox">
+                                                <div>Американский</div>
+                                            </div>
+                                            <div class="checkbox_category">
+                                                <input class="checkbox" type="checkbox">
+                                                <div>Американский</div>
+                                            </div>
+                                            <div class="checkbox_category">
+                                                <input class="checkbox" type="checkbox">
+                                                <div>Американский</div>
+                                            </div>
+                                            <div class="checkbox_category">
+                                                <input class="checkbox" type="checkbox">
+                                                <div>Американский</div>
+                                            </div>
+                                            <div class="checkbox_category">
+                                                <input class="checkbox" type="checkbox">
+                                                <div>Американский</div>
+                                            </div>
+                                            <div class="checkbox_category">
+                                                <input class="checkbox" type="checkbox">
+                                                <div>Американский</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="category_colors">
+                                    <div class="category_main_bar_categori_now category_main_bar_categori_now2">
+                                        <div>Цвет</div>
+                                        <img class="category_main_bar_categori_active_img_now category_main_bar_categori_active_img_now2"
+                                            src="./img_ikonki/chevron.png" alt="">
+                                        <img class="category_main_bar_categori_active_img category_main_bar_categori_active_img2"
+                                            style="display: none;" src="./img_ikonki/chevron1.png" alt="">
+                                    </div>
+                                    <div style="display: none;" class="category_main_bar_categori_after_color">
+                                        <div class="orange"></div>
+                                        <div class="light_green"></div>
+                                        <div class="light_purple"></div>
+                                        <div class="dark_blue"></div>
+                                        <div class="green"></div>
+                                        <div class="black"></div>
+                                        <div class="dark_black"></div>
+                                    </div>
+                                </div>
+                                <div class="category_lystri">
+                                    <div class="category_main_bar_categori_now category_main_bar_categori_now3">
+                                        <div>Бренд</div>
+                                        <img class="category_main_bar_categori_active_img_now category_main_bar_categori_active_img_now3"
+                                            src="./img_ikonki/chevron.png" alt="">
+                                        <img class="category_main_bar_categori_active_img category_main_bar_categori_active_img3"
+                                            style="display: none;" src="./img_ikonki/chevron1.png" alt="">
+                                    </div>
+                                    <div style="display: none;" class="category_brand">
+                                        <input placeholder="Поиск по списку"
+                                            class="category_main_bar_categori_active_input" type="text">
+                                        <div class="category_main_bar_categori_now_bottom_after">
+                                            <div class="checkbox_category">
+                                                <input class="checkbox" type="checkbox">
+                                                <div>Gucci</div>
+                                            </div>
+                                            <div class="checkbox_category">
+                                                <input class="checkbox" type="checkbox">
+                                                <div>Rolex</div>
+                                            </div>
+                                            <div class="checkbox_category">
+                                                <input class="checkbox" type="checkbox">
+                                                <div>Hublot</div>
+                                            </div>
+                                            <div class="checkbox_category">
+                                                <input class="checkbox" type="checkbox">
+                                                <div>Дизайнерский</div>
+                                            </div>
+                                            <div class="checkbox_category">
+                                                <input class="checkbox" type="checkbox">
+                                                <div>Ulysse Nardin</div>
+                                            </div>
+                                            <div class="checkbox_category">
+                                                <input class="checkbox" type="checkbox">
+                                                <div>Panerai</div>
+                                            </div>
+                                            <div class="checkbox_category">
+                                                <input class="checkbox" type="checkbox">
+                                                <div>Bruno Söhnle</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="category_lystri">
+                                    <div class="category_main_bar_categori_now category_main_bar_categori_now4">
+                                        <div>Цена, сом</div>
+                                        <img class="category_main_bar_categori_active_img_now category_main_bar_categori_active_img_now4"
+                                            src="./img_ikonki/chevron.png" alt="">
+                                        <img class="category_main_bar_categori_active_img category_main_bar_categori_active_img4"
+                                            style="display: none;" src="./img_ikonki/chevron1.png" alt="">
+                                    </div>
+                                    <div style="display: none;" class="range_slider_place">
+                                        <div id="range_slider" class="range_slider_card_category">
+
+                                        </div>
+                                        <div class="range_slider_bottom">
+                                            <div class="range_slider_bottom_btn">Фильтр</div>
+                                            <div class="range_slider_bottom_numbers">от <div class="range_slider_min">0
+                                                </div> до <div class="range_slider_max">9999</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="main_category_cards">
+                    <div class="fovorites_under_title">
+
+                        <div class="fovorite_filter_buttons">
+                            <div class="fovorites_under_title_text"> Сортировать по:</div>
+                            <div class="fovorite_filter_popular fovorites_under_title_active">популярности</div>
+                            <div class="fovorite_filter_cost_up">цене <img src="./img_ikonki/arrow_up.png" alt=""></div>
+                            <div class="fovorite_filter_cost_down">цене <img src="./img_ikonki/arrow_down.png" alt="">
+                            </div>
+                            <div class="fovorite_filter_rank">рейтингу</div>
+                        </div>
+                        <div class="favorites_tovar_much">Показано: <span>244 товара</span></div>
+                    </div>
+                    <div class="favorites_cards">
+                        <div class="intro3_slider_card">
+                            <img class="intro3_slider_img" src="./images/Frame 30.png" alt="">
+                            <img class="aksiya" src="./images/Component 2.png" alt="">
+                            <div class="container_card">
+                                <div class="intro3_slider_card_desc">Бра Odeon Light 4382/1W Hightechd</div>
+                                <p>Артикул</p>
+
+                                <div class="intro3_slider_card_cost_bar">
+                                    <div class="intro3_slider_card_cost">4 560 c.</div>
+                                    <div class="intro3_slider_icons">
+                                        <img src="./img_ikonki/ic_round-favorite-border.png" alt="">
+                                        <img src="./img_ikonki/icon.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="intro3_slider_card">
+                            <img class="intro3_slider_img" src="./images/Frame 30.png" alt="">
+                            <img class="aksiya" src="./images/Component 2.png" alt="">
+                            <div class="container_card">
+                                <div class="intro3_slider_card_desc">Бра Odeon Light 4382/1W Hightechd</div>
+                                <p>Артикул</p>
+
+                                <div class="intro3_slider_card_cost_bar">
+                                    <div class="intro3_slider_card_cost">4 560 c.</div>
+                                    <div class="intro3_slider_icons">
+                                        <img src="./img_ikonki/ic_round-favorite-border.png" alt="">
+                                        <img src="./img_ikonki/icon.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="intro3_slider_card">
+                            <img class="intro3_slider_img" src="./images/Frame 30.png" alt="">
+                            <img class="aksiya" src="./images/Component 2.png" alt="">
+                            <div class="container_card">
+                                <div class="intro3_slider_card_desc">Бра Odeon Light 4382/1W Hightechd</div>
+                                <p>Артикул</p>
+
+                                <div class="intro3_slider_card_cost_bar">
+                                    <div class="intro3_slider_card_cost">4 560 c.</div>
+                                    <div class="intro3_slider_icons">
+                                        <img src="./img_ikonki/ic_round-favorite-border.png" alt="">
+                                        <img src="./img_ikonki/icon.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="intro3_slider_card">
+                            <img class="intro3_slider_img" src="./images/Frame 30.png" alt="">
+                            <img class="aksiya" src="./images/Component 2.png" alt="">
+                            <div class="container_card">
+                                <div class="intro3_slider_card_desc">Бра Odeon Light 4382/1W Hightechd</div>
+                                <p>Артикул</p>
+
+                                <div class="intro3_slider_card_cost_bar">
+                                    <div class="intro3_slider_card_cost">4 560 c.</div>
+                                    <div class="intro3_slider_icons">
+                                        <img src="./img_ikonki/ic_round-favorite-border.png" alt="">
+                                        <img src="./img_ikonki/icon.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="favorites_cards">
+                        <div class="intro3_slider_card">
+                            <img class="intro3_slider_img" src="./images/Frame 30.png" alt="">
+                            <img class="aksiya" src="./images/Component 2.png" alt="">
+                            <div class="container_card">
+                                <div class="intro3_slider_card_desc">Бра Odeon Light 4382/1W Hightechd</div>
+                                <p>Артикул</p>
+
+                                <div class="intro3_slider_card_cost_bar">
+                                    <div class="intro3_slider_card_cost">4 560 c.</div>
+                                    <div class="intro3_slider_icons">
+                                        <img src="./img_ikonki/ic_round-favorite-border.png" alt="">
+                                        <img src="./img_ikonki/icon.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="intro3_slider_card">
+                            <img class="intro3_slider_img" src="./images/Frame 30.png" alt="">
+                            <img class="aksiya" src="./images/Component 2.png" alt="">
+                            <div class="container_card">
+                                <div class="intro3_slider_card_desc">Бра Odeon Light 4382/1W Hightechd</div>
+                                <p>Артикул</p>
+
+                                <div class="intro3_slider_card_cost_bar">
+                                    <div class="intro3_slider_card_cost">4 560 c.</div>
+                                    <div class="intro3_slider_icons">
+                                        <img src="./img_ikonki/ic_round-favorite-border.png" alt="">
+                                        <img src="./img_ikonki/icon.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="intro3_slider_card">
+                            <img class="intro3_slider_img" src="./images/Frame 30.png" alt="">
+                            <img class="aksiya" src="./images/Component 2.png" alt="">
+                            <div class="container_card">
+                                <div class="intro3_slider_card_desc">Бра Odeon Light 4382/1W Hightechd</div>
+                                <p>Артикул</p>
+
+                                <div class="intro3_slider_card_cost_bar">
+                                    <div class="intro3_slider_card_cost">4 560 c.</div>
+                                    <div class="intro3_slider_icons">
+                                        <img src="./img_ikonki/ic_round-favorite-border.png" alt="">
+                                        <img src="./img_ikonki/icon.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="intro3_slider_card">
+                            <img class="intro3_slider_img" src="./images/Frame 30.png" alt="">
+                            <img class="aksiya" src="./images/Component 2.png" alt="">
+                            <div class="container_card">
+                                <div class="intro3_slider_card_desc">Бра Odeon Light 4382/1W Hightechd</div>
+                                <p>Артикул</p>
+
+                                <div class="intro3_slider_card_cost_bar">
+                                    <div class="intro3_slider_card_cost">4 560 c.</div>
+                                    <div class="intro3_slider_icons">
+                                        <img src="./img_ikonki/ic_round-favorite-border.png" alt="">
+                                        <img src="./img_ikonki/icon.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="favorites_cards">
+                        <div class="intro3_slider_card">
+                            <img class="intro3_slider_img" src="./images/Frame 30.png" alt="">
+                            <img class="aksiya" src="./images/Component 2.png" alt="">
+                            <div class="container_card">
+                                <div class="intro3_slider_card_desc">Бра Odeon Light 4382/1W Hightechd</div>
+                                <p>Артикул</p>
+
+                                <div class="intro3_slider_card_cost_bar">
+                                    <div class="intro3_slider_card_cost">4 560 c.</div>
+                                    <div class="intro3_slider_icons">
+                                        <img src="./img_ikonki/ic_round-favorite-border.png" alt="">
+                                        <img src="./img_ikonki/icon.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="intro3_slider_card">
+                            <img class="intro3_slider_img" src="./images/Frame 30.png" alt="">
+                            <img class="aksiya" src="./images/Component 2.png" alt="">
+                            <div class="container_card">
+                                <div class="intro3_slider_card_desc">Бра Odeon Light 4382/1W Hightechd</div>
+                                <p>Артикул</p>
+
+                                <div class="intro3_slider_card_cost_bar">
+                                    <div class="intro3_slider_card_cost">4 560 c.</div>
+                                    <div class="intro3_slider_icons">
+                                        <img src="./img_ikonki/ic_round-favorite-border.png" alt="">
+                                        <img src="./img_ikonki/icon.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="intro3_slider_card">
+                            <img class="intro3_slider_img" src="./images/Frame 30.png" alt="">
+                            <img class="aksiya" src="./images/Component 2.png" alt="">
+                            <div class="container_card">
+                                <div class="intro3_slider_card_desc">Бра Odeon Light 4382/1W Hightechd</div>
+                                <p>Артикул</p>
+
+                                <div class="intro3_slider_card_cost_bar">
+                                    <div class="intro3_slider_card_cost">4 560 c.</div>
+                                    <div class="intro3_slider_icons">
+                                        <img src="./img_ikonki/ic_round-favorite-border.png" alt="">
+                                        <img src="./img_ikonki/icon.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="intro3_slider_card">
+                            <img class="intro3_slider_img" src="./images/Frame 30.png" alt="">
+                            <img class="aksiya" src="./images/Component 2.png" alt="">
+                            <div class="container_card">
+                                <div class="intro3_slider_card_desc">Бра Odeon Light 4382/1W Hightechd</div>
+                                <p>Артикул</p>
+
+                                <div class="intro3_slider_card_cost_bar">
+                                    <div class="intro3_slider_card_cost">4 560 c.</div>
+                                    <div class="intro3_slider_icons">
+                                        <img src="./img_ikonki/ic_round-favorite-border.png" alt="">
+                                        <img src="./img_ikonki/icon.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer_magazines">
+                <div>Интернет-магазин</div>
+                <div>Люстры</div>
+                <div>Светильники</div>
+                <div>Бра</div>
+                <div>Настольные лампы</div>
+                <div>Споты</div>
+                <div>Торшеры</div>
+                <div>Уличное освещение</div>
+                <div>Весь каталог</div>
+            </div>
+            <div class="footer_help">
+                <div>Помощь</div>
+                <div>Доставка</div>
+                <div>Оплата</div>
+                <div>Возврат</div>
+                <div>Гарантия</div>
+                <div>Виды ламп</div>
+            </div>
+            <div class="footer_about_us">
+                <div>О компании</div>
+                <div>Контакты</div>
+                <div>Реквизиты</div>
+                <div>Новости</div>
+                <div>Дизайн-события</div>
+                <div class="footer_partners">Партнерам</div>
+                <div>Дизайнерам</div>
+                <div>Поставщикам</div>
+            </div>
+            <div class="footer_numbers">
+                <div>+996 (799) 33 88 99 <p class="footer_gorod">г. Бишкек</p>
+                </div>
+                <div>+996 (777) 00 00 00 <p class="footer_gorod">Бесплатно по КР</p>
+                </div>
+                <p class="footer_gorod_2">info@vamsvet.ru</p>
+
+                <div class="footer_icons">Мы принимаем к оплате</div>
+                <div class="footer_icon">
+                    <div>
+                        <img src="./img_ikonki/mir.svg.png" alt="">
+                        <img src="./img_ikonki/visa.svg.png" alt="">
+                        <img src="./img_ikonki/maestro.svg.png" alt="">
+                    </div>
+                    <div>
+                        <img src="./img_ikonki/master.svg.png" alt="">
+                        <img src="./img_ikonki/card.svg.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./card_category.js"></script>
+    <script src="./libs/nouislider.min.js"></script>
+    <script src="./libs/range-slider.js"></script>
+    <script src="./Main.js"></script>
+
+</body>
+
+</html>
